@@ -122,3 +122,5 @@ PROYECTO_GESTION/
 **Asignatura:** Desarrollo de Software  
 **Duración:** 120 minutos
 
+## Scrum Master
+- José Figueredo (Líder del equipo de trabajo)
