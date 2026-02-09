@@ -1,126 +1,208 @@
-# Taller Scrum – Gestión Integrada  
-### Aplicación de Consola en Python
+🧩 Taller Scrum – Gestión Integrada
+Aplicación de Consola para Gestión de Tareas en Python
+1. Descripción General
 
----
+El presente repositorio contiene el desarrollo del proyecto Taller Scrum – Gestión Integrada, una iniciativa académica orientada a la aplicación práctica de los principios, roles, eventos y artefactos del marco de trabajo Scrum, integrados con buenas prácticas de ingeniería de software, control de versiones, trabajo colaborativo y aseguramiento de la calidad.
 
-## 1. Introducción
-Este repositorio corresponde al proyecto **Taller Scrum – Gestión Integrada**, cuyo propósito es aplicar de manera práctica los principios y ceremonias del marco de trabajo **Scrum**, junto con buenas prácticas de **control de versiones**, **trabajo colaborativo** y **calidad de software**.
+El proyecto materializa estos conceptos mediante la construcción de una aplicación de consola desarrollada en Python, cuyo propósito es permitir la gestión básica de tareas (creación, consulta, actualización y eliminación), sirviendo como escenario para simular un entorno real de desarrollo ágil.
 
-El proyecto consiste en el desarrollo de una **aplicación de consola en Python para la gestión de tareas**, acompañada de documentación técnica, pruebas automatizadas y lineamientos formales de trabajo en equipo.
+Adicionalmente, el repositorio incorpora documentación técnica, lineamientos de colaboración, pruebas automatizadas y convenciones de versionado que fortalecen la trazabilidad y la mantenibilidad del sistema.
 
----
+2. Propósito del Proyecto
 
-## 2. Objetivos del proyecto
-- Aplicar el marco de trabajo **Scrum** en un entorno de desarrollo controlado.
-- Implementar una aplicación funcional en **Python** siguiendo una arquitectura simple y clara.
-- Utilizar **Git Flow** como estrategia de ramificación.
-- Aplicar el estándar **Conventional Commits** para asegurar trazabilidad y consistencia.
-- Incorporar **pruebas automatizadas** como parte del aseguramiento de la calidad.
-- Fomentar buenas prácticas de documentación técnica.
+Este proyecto tiene como finalidad fortalecer las competencias del estudiante en:
 
----
+Aplicación práctica de metodologías ágiles, particularmente Scrum.
 
-## 3. Estructura del repositorio
-El repositorio se organiza de la siguiente manera:
+Implementación de soluciones utilizando Python.
 
-- **PROYECTO_GESTION.md**  
-  Documento principal que describe el alcance, requerimientos y lineamientos del taller.
+Uso profesional de Git y flujos de trabajo colaborativos.
 
-- **tarea_app.py**  
-  Punto de entrada de la aplicación de consola para la gestión de tareas.
+Implementación de estándares de calidad en el desarrollo de software.
 
-- **tareas_core.py**  
-  Módulo que contiene la lógica de negocio principal del sistema.
+Elaboración de documentación técnica clara y estructurada.
 
-- **tests/**  
-  Conjunto de pruebas automatizadas desarrolladas con `pytest`.
+3. Objetivos
+3.1 Objetivo General
 
-- **scripts/**  
-  Scripts para la configuración de hooks de Git.
+Desarrollar una aplicación de consola en Python para la gestión de tareas, aplicando el marco de trabajo Scrum y buenas prácticas de ingeniería de software.
 
-- **.github/**  
-  Plantillas y configuraciones para Pull Requests y flujo de colaboración.
+3.2 Objetivos Específicos
 
----
+Implementar una arquitectura modular y mantenible.
 
-## 4. Requisitos del sistema
-Para ejecutar correctamente el proyecto se requiere:
+Aplicar el flujo de trabajo Git Flow.
 
-- **Python 3.8 o superior**
-- **pip**
-- **Git**
-- Sistema operativo Windows, Linux o macOS
+Utilizar el estándar Conventional Commits.
 
----
+Diseñar e implementar pruebas automatizadas.
 
-## 5. Instalación
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/figueredoestupinan2025/Taller-scrum-gestion.git
-Acceder al directorio del proyecto:
+Documentar adecuadamente el proyecto.
 
-bash
-Copiar código
+Simular un entorno real de trabajo colaborativo.
+
+4. Alcance
+
+La aplicación permitirá:
+
+Registrar nuevas tareas.
+
+Listar tareas existentes.
+
+Actualizar información de tareas.
+
+Eliminar tareas.
+
+Persistir información durante la ejecución.
+
+No se incluye interfaz gráfica ni persistencia en base de datos; el enfoque está orientado al aprendizaje del flujo de desarrollo ágil.
+
+5. Tecnologías Utilizadas
+
+Lenguaje: Python 3
+
+Control de versiones: Git
+
+Gestor de dependencias: pip
+
+Framework de pruebas: pytest
+
+Sistema operativo: Multiplataforma
+
+6. Arquitectura General
+
+El proyecto sigue una arquitectura modular:
+
+Capa de presentación → tarea_app.py
+
+Capa de lógica de negocio → tareas_core.py
+
+Capa de pruebas → carpeta tests/
+
+Este enfoque facilita la escalabilidad, el mantenimiento y las pruebas.
+
+7. Estructura del Repositorio
+Taller-scrum-gestion/
+│
+├── PROYECTO_GESTION.md
+├── tarea_app.py
+├── tareas_core.py
+├── requirements.txt
+│
+├── tests/
+│   └── test_tareas.py
+│
+├── scripts/
+│   ├── setup-hooks.sh
+│   └── setup-hooks.ps1
+│
+└── .github/
+    └── PULL_REQUEST_TEMPLATE.md
+
+8. Requisitos del Sistema
+
+Python 3.8 o superior
+
+pip
+
+Git
+
+Conexión a internet para instalación inicial
+
+9. Instalación
+
+Clonar el repositorio:
+
+git clone https://github.com/figueredoestupinan2025/Taller-scrum-gestion.git
+
+
+Ingresar al directorio:
+
 cd Taller-scrum-gestion
-Instalar las dependencias:
 
-bash
-Copiar código
+
+Instalar dependencias:
+
 pip install -r requirements.txt
-6. Configuración de hooks de Git
-Los hooks permiten validar automáticamente los mensajes de commit conforme al estándar Conventional Commits.
 
-Bash (Git Bash / WSL)
-bash
-Copiar código
+10. Configuración de Hooks de Git
+Bash
 ./scripts/setup-hooks.sh
-PowerShell (Windows)
-powershell
-Copiar código
+
+PowerShell
 .\scripts\setup-hooks.ps1
-Esta configuración se realiza una sola vez por equipo.
 
-7. Ejecución del proyecto
-7.1 Ejecución de la aplicación
-Para iniciar la aplicación en modo interactivo:
 
-bash
-Copiar código
+Estos hooks validan los mensajes de commit según Conventional Commits.
+
+11. Ejecución
+Aplicación
 python tarea_app.py
-7.2 Ejecución de pruebas
-Para ejecutar las pruebas automatizadas:
 
-bash
-Copiar código
+Pruebas
 pytest -q
-8. Flujo de trabajo recomendado
-El proyecto sigue un flujo de trabajo basado en Git Flow:
 
-Crear una rama a partir de main:
+12. Flujo de Trabajo (Git Flow)
+
+Crear rama:
 
 feature/nombre-funcionalidad
 
-rama-nombre-historia
 
-Realizar commits siguiendo el estándar Conventional Commits.
+Desarrollar funcionalidad.
 
-Enviar los cambios al repositorio remoto (push).
+Realizar commits con Conventional Commits.
 
-Crear un Pull Request contra la rama main, utilizando la plantilla definida en:
+Push al repositorio.
 
-.github/PULL_REQUEST_TEMPLATE.md
+Crear Pull Request a main.
 
-Esperar al menos una aprobación y la validación exitosa del pipeline de integración continua antes de realizar el merge.
+Esperar aprobación.
 
-9. Roles del proyecto
-Scrum Master:
-José Figueredo
+Realizar merge.
 
-10. Consideraciones finales
-Este proyecto tiene fines académicos y formativos, orientados al fortalecimiento de competencias en metodologías ágiles, control de versiones y desarrollo de software de calidad.
+13. Convención de Commits
 
-11. Licencia
-Proyecto de uso académico. Todos los derechos reservados para fines educativos.
+Ejemplo:
 
-markdown
-Copiar código
+feat: agregar creación de tareas
+fix: corregir validación de entrada
+docs: actualizar README
+test: agregar pruebas de eliminación
+
+14. Gestión Scrum
+
+Product Backlog
+
+Sprint Backlog
+
+Daily Scrum (simulado)
+
+Sprint Review
+
+Sprint Retrospective
+
+15. Roles
+
+Scrum Master: José Figueredo
+
+Desarrollador: José Figueredo
+
+16. Calidad del Software
+
+Pruebas automatizadas
+
+Código modular
+
+Convenciones de estilo
+
+Revisión mediante Pull Requests
+
+17. Consideraciones Finales
+
+Este proyecto es de carácter académico y demuestra la aplicación integrada de metodologías ágiles y desarrollo de software, sentando bases sólidas para proyectos de mayor complejidad.
+
+18. Licencia
+
+Proyecto de uso académico.
+Todos los derechos reservados para fines educativos.
