@@ -72,76 +72,94 @@ Permitir a los usuarios:
 #### 📘 Historias de Usuario
 
 ##### HU-01: Ver lista de tareas
-**Como** usuario  
-**Quiero** ver una lista de tareas registradas  
-**Para** conocer las tareas pendientes y completadas.
+# 📋 Documento de Gestión Maestro
+## Gestión Integrada Scrum + GitHub
 
-**Criterios de Aceptación:**
-- El sistema muestra todas las tareas.
-- Cada tarea indica su estado (completada o pendiente).
-- Si no hay tareas, se muestra un mensaje informativo.
+**Asignatura:** Desarrollo de Software  
+**Duración:** 120 minutos  
+**Metodología:** Aprendizaje Basado en Proyectos (ABP)
 
-##### HU-02: Agregar tareas
-**Como** usuario  
-**Quiero** agregar nuevas tareas mediante un input  
-**Para** registrar actividades por realizar.
+---
 
-**Criterios de Aceptación:**
-- No se permiten tareas vacías.
-- Las tareas se agregan como pendientes.
-- El sistema confirma la creación de la tarea.
+## Sección 1: Planificación (Integrante A - Scrum Master)
 
-##### HU-03: Marcar tareas como completadas
-**Como** usuario  
-**Quiero** marcar tareas como completadas  
-**Para** llevar control de las tareas realizadas.
+### Nombres de los Integrantes y Roles
+- **Integrante A (Scrum Master / Facilitador):** [SCRUM_MASTER - sustituir por tu nombre]
+- **Integrante B (Product Owner / Analista):** [INTEGRANTE_B - sustituir por nombre]
+- **Integrante C (QA / Developer):** [INTEGRANTE_C - sustituir por nombre]
 
-**Criterios de Aceptación:**
-- El usuario puede seleccionar una tarea existente.
-- La tarea cambia su estado a completada.
-- El sistema valida entradas incorrectas.
+### Enlace al Tablero de Gestión
+[Enlace a Trello o Jira: pega aquí la URL del tablero]
 
-##### HU-04: Eliminar tareas
-**Como** usuario  
-**Quiero** eliminar tareas  
-**Para** mantener la lista organizada.
+### Captura de Pantalla del Tablero al Inicio del Sprint
+![Captura del Tablero Inicial](imagenes/tablero_inicial.png)
 
-**Criterios de Aceptación:**
-- El usuario puede eliminar una tarea existente.
-- El sistema confirma la eliminación.
-- Se valida que el número de tarea sea correcto.
+---
+
+## Sección 2: Historias de Usuario (Integrante B - Product Owner)
+
+### 📝 Aplicación Lista de Tareas (Python)
+
+#### 📌 Descripción del Proyecto
+Este proyecto implementa una aplicación de consola en **Python 3** para gestionar una lista de tareas. El objetivo es evidenciar el trabajo de las HU, la trazabilidad y el uso correcto de ramas y PRs en GitHub.
+
+#### 🎯 Historias de Usuario implementadas
+- HU-01: Ver lista de tareas
+- HU-02: Agregar tareas mediante input
+- HU-03: Marcar tareas como completadas
+- HU-04: Eliminar tareas
 
 #### 📊 Tabla de Trazabilidad
 
 | ID Historia | Funcionalidad               | Rama de Git      | Estado     |
-|------------|-----------------------------|------------------|------------|
+|------------:|-----------------------------|------------------|------------|
 | HU-01      | Ver lista de tareas         | rama-historias   | Finalizado |
 | HU-02      | Agregar tareas              | rama-historias   | Finalizado |
 | HU-03      | Marcar tareas completadas   | rama-historias   | Finalizado |
 | HU-04      | Eliminar tareas             | rama-historias   | Finalizado |
 
-#### 🛠️ Tecnologías Utilizadas
-- **Lenguaje:** Python 3
-- **Control de versiones:** Git y GitHub
-- **Entorno:** Consola
-
 ---
 
 ## Sección 3: Evidencias y Retro (Integrante C - QA/Developer)
 
-### Captura de Pantalla del Historial de Network en GitHub
-![Historial de GitHub](imagenes/github_network.png)  
-*(Sube aquí la captura `imagenes/github_network.png` mostrando las ramas, commits y merges en GitHub)*
+### Capturas y evidencias
+- Subir `imagenes/tablero_inicial.png` (Trello/Jira) y `imagenes/github_network.png` (Network/Graph de GitHub).
 
-### Retrospectiva
-#### ¿Qué fue lo más difícil de sincronizar?
-La sincronización de ramas y merges fue desafiante debido a la necesidad de coordinar cambios entre compañeros. Los conflictos en el documento requerían comunicación constante.
-
-#### ¿Cómo resolvieron los conflictos de código/texto?
-Resolvimos conflictos revisando los cambios en GitHub, discutiendo con el equipo y aceptando la versión más actualizada o fusionando manualmente las diferencias.
+### Retrospectiva (ejemplo)
+- ¿Qué fue lo más difícil de sincronizar?: Coordinación de merges y conflictos en el MD.
+- ¿Cómo resolvieron los conflictos?: Revisión por pares en PRs y merge manual cuando hacía falta.
 
 ---
 
-**Fin del Documento de Gestión Maestro**
- 
+## Cómo ejecutar la aplicación y pruebas (Python)
+
+1) Requisitos: tener Python 3 instalado y `pip`.
+
+2) Instalar dependencias de pruebas:
+
+```bash
+pip install -r requirements.txt
 ```
+
+3) Ejecutar la app (interactiva):
+
+```bash
+python tarea_app.py
+```
+
+4) Ejecutar tests (pytest):
+
+```bash
+pytest -q
+```
+
+---
+
+## Checklist de entrega rápida
+- Completar los nombres de los integrantes en Sección 1.
+- Añadir el enlace al tablero.
+- Subir las capturas en `imagenes/`.
+- Asegurar que cada integrante crea su rama (`rama-planificacion`, `rama-historias`, `rama-evidencias`) y abre PRs contra `main`.
+- Pedir al menos una revisión y aprobación por PR antes de mergear.
+
+**Fin del Documento de Gestión Maestro**
