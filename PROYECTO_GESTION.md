@@ -24,6 +24,33 @@
 ---
 
 ## Sección 2: Historias de Usuario (Integrante B - Product Owner)
+```markdown
+# 📋 Documento de Gestión Maestro
+## Gestión Integrada Scrum + GitHub
+
+**Asignatura:** Desarrollo de Software  
+**Duración:** 120 minutos  
+**Metodología:** Aprendizaje Basado en Proyectos (ABP)
+
+---
+
+## Sección 1: Planificación (Integrante A - Scrum Master)
+
+### Nombres de los Integrantes y Roles
+- **Integrante A (Scrum Master / Facilitador):** [Scrum Master: sustituir por tu nombre]  
+- **Integrante B (Product Owner / Analista):** [Integrante B: sustituir por nombre]  
+- **Integrante C (QA / Developer):** [Integrante C: sustituir por nombre]
+
+### Enlace al Tablero de Gestión
+[Enlace a Trello o Jira: pega aquí la URL del tablero]
+
+### Captura de Pantalla del Tablero al Inicio del Sprint
+![Captura del Tablero Inicial](imagenes/tablero_inicial.png)  
+*(Añade aquí la captura del tablero con las HU en Backlog, To Do, etc.; si no hay imagen, sube el archivo a `imagenes/`)*
+
+---
+
+## Sección 2: Historias de Usuario (Integrante B - Product Owner)
 
 ### 📝 Aplicación Lista de Tareas (Python)
 
@@ -104,7 +131,7 @@ Permitir a los usuarios:
 
 ### Captura de Pantalla del Historial de Network en GitHub
 ![Historial de GitHub](imagenes/github_network.png)  
-*(Captura del historial de red en GitHub mostrando ramas, commits y merges)*
+*(Sube aquí la captura `imagenes/github_network.png` mostrando las ramas, commits y merges en GitHub)*
 
 ### Retrospectiva
 #### ¿Qué fue lo más difícil de sincronizar?
@@ -116,3 +143,5 @@ Resolvimos conflictos revisando los cambios en GitHub, discutiendo con el equipo
 ---
 
 **Fin del Documento de Gestión Maestro**
+ 
+```

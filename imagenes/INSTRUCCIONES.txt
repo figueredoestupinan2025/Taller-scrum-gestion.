@@ -1,0 +1,5 @@
+Añade capturas de pantalla aquí:
+- tablero_inicial.png -> captura del tablero (Trello/Jira) al inicio del sprint
+- github_network.png -> captura del Network/Graph en GitHub mostrando ramas y merges
+
+Nombra los archivos exactamente como arriba y luego añade/commitea/pushea la carpeta `imagenes` al repositorio.
