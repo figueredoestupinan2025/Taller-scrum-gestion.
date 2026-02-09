@@ -8,5 +8,5 @@
 - [x] Implementar la función completar_tarea (HU-03: Marcar como completadas, con validación).
 - [x] Implementar la función eliminar_tarea (HU-04: Eliminar tareas, con validación).
 - [x] Agregar el bucle principal del menú con opciones para salir.
-- [ ] Probar el script ejecutándolo para verificar todas las funcionalidades (requiere instalación de Python).
+- [x] Probar el script ejecutándolo para verificar todas las funcionalidades (requiere instalación de Python).
 - [x] Actualizar el progreso en este archivo TODO.md.

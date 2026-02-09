@@ -10,15 +10,15 @@
 ## Sección 1: Planificación (Integrante A - Scrum Master)
 
 ### Nombres de los Integrantes y Roles
-- **Integrante A (Scrum Master / Facilitador):** [Tu Nombre como Scrum Master]  
-- **Integrante B (Product Owner / Analista):** [Nombre del Compañero B]  
-- **Integrante C (QA / Developer):** [Nombre del Compañero C]
+- **Integrante A (Scrum Master / Facilitador):** José Figueredo
+- **Integrante B (Product Owner / Analista):** Andrés Molina
+- **Integrante C (QA / Developer):** José Solano
 
 ### Enlace al Tablero de Gestión
-[Enlace a Trello o Jira: https://trello.com/b/... o https://jira.com/...]
+[Enlace a Jira: https://campu.atlassian.net/?continue=https%3A%2F%2Fcampu.atlassian.net%2Fwelcome%2Fsoftware%3FprojectId%3D10000&atlOrigin=eyJpIjoiZGQzMjIzNmUzY2VkNDg3ZmI0MTJhNGMxMTc5NGVjMzQiLCJwIjoiamlyYS1zb2Z0d2FyZSJ9]
 
 ### Captura de Pantalla del Tablero al Inicio del Sprint
-![Captura del Tablero Inicial](imagenes/tablero_inicial.png)  
+![Captura del Tablero Inicial](imagenes/tablero_inicial.png)
 *(Coloca aquí la captura del tablero con las HU en Backlog, To Do, etc.)*
 
 ---
